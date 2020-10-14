@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/passwd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="출제자 \n비밀번호"
+        android:textColor="#FFFFFF"
+        android:textSize="20pt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/passwd"
+        />
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_edge"
+        android:ems="8"
+        android:inputType="numberPassword"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/Hairu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwd_text" />
+
+    <Button
+        android:id="@+id/Hairu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="들어가기"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwd"
+        />
+</android.support.constraint.ConstraintLayout>
